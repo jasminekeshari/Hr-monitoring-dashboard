@@ -11,10 +11,10 @@ export default function HeaderBar() {
   }
 
   return (
-    <div className="header" style={{ backgroundColor: 'darkgrey' }}>
+    <div className="header" style={{ backgroundColor: 'lightblue' }}>
       <div className="brand">
         <div>
-          <div className="title">Interface Monitoring</div>
+          <div className="title"><bold>INTERFACE MONITORING</bold></div>
           <div style={{ color: 'black' }} className="small">HR Integrations — SuccessFactors → ECP / 3rd-party</div>
         </div>
       </div>
