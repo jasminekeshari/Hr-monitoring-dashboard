@@ -38,17 +38,18 @@ export default function App(){
       <div style={{height:12}} />
       <SummaryCards summary={summary.summary} />
       <TrendChart trend={summary.trend} />
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginTop:12}}>
+      <AddLogForm />
+      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginTop:12, backgroundColor:'white', padding:15, textAlign:'center'}}>
         <h3 style={{margin:0}}>Live Interface Logs</h3>
         <div>
           <button className="btn btn-primary" onClick={()=>setDialogOpen(true)}>Advanced Filters</button>
         </div>
+       
       </div>
-        <AddLogForm />
       <LogsTable sseConnect={sseConnect} />
-      <AdvancedFiltersDialog open={dialogOpen} onClose={()=>setDialogOpen(false)} />
+      {/* <AdvancedFiltersDialog open={dialogOpen} onClose={()=>setDialogOpen(false)} /> */}
       <Toaster position="top-right" />
-      <div className="footer">Built with ❤️ — HR Integrations Dashboard</div>
+      <div style={{ color: 'black' }} className="footer">Built with love@2025 — HR Integrations Dashboard</div>
     </div>
   )
 }
