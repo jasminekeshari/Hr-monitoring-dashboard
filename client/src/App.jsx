@@ -3,6 +3,7 @@ import HeaderBar from './components/HeaderBar'
 import SummaryCards from './components/SummaryCards'
 import TrendChart from './components/TrendChart'
 import LogsTable from './components/LogsTable'
+import AddLogForm from './components/AddLogForm'
 import AdvancedFiltersDialog from './components/AdvancedFiltersDialog'
 import { fetchSummary, connectSSE } from './lib/api'
 import { useFilters } from './store/useFilters'
@@ -43,6 +44,7 @@ export default function App(){
           <button className="btn btn-primary" onClick={()=>setDialogOpen(true)}>Advanced Filters</button>
         </div>
       </div>
+        <AddLogForm />
       <LogsTable sseConnect={sseConnect} />
       <AdvancedFiltersDialog open={dialogOpen} onClose={()=>setDialogOpen(false)} />
       <Toaster position="top-right" />
