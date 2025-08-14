@@ -1,0 +1,39 @@
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.15);
+  padding: 1rem;
+}
+.badge {
+  border-radius: 9999px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-success {
+  background-color: #d1fae5;
+  color: #047857;
+}
+.badge-failure {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+.badge-pending {
+  background-color: #fef9c3;
+  color: #b45309;
+}
+.badge-low {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+.badge-medium {
+  background-color: #fed7aa;
+  color: #c2410c;
+}
+.badge-high {
+  background-color: #fecaca;
+  color: #991b1b;
+}
